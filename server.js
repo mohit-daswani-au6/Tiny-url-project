@@ -1,5 +1,4 @@
 const express=require('express')
-const morgan=require('morgan')
 const hbs=require('hbs')
 const path=require('path')
 const app=express()
