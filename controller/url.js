@@ -10,7 +10,7 @@ module.exports = {
            await res.render('data',{data})
        },
        url1:async(req,res)=>{
-           temp=`https://attainu-tiny-url.herokuapp.com/url/${req.params.url}`
+           temp=`https://tiny-url-by-mohit.herokuapp.com/url/${req.params.url}`
            let data=await url1.find({newurl:temp})
            console.log(data)
            data[0].count+=1
@@ -25,7 +25,7 @@ module.exports = {
         url:async(req,res)=>{
             url=req.body.url
             user=req.session.userid
-            temp=`https://attainu-tiny-url.herokuapp.com/url/${shortid.generate()}`
+            temp=`https://tiny-url-by-mohit.herokuapp.com/url/${shortid.generate()}`
             user123={
                 userid:user,
                 previousurl:url,
