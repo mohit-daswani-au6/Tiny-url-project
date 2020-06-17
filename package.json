@@ -29,7 +29,6 @@
     "shortid": "^2.2.15"
   },
   "devDependencies": {
-    "morgan": "^1.10.0",
     "nodemon": "^2.0.4"
   }
 }
